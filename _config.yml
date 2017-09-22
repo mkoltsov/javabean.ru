@@ -1,0 +1,16 @@
+url: http://javabean.ru
+name: 'Michael Koltsov&#039;s den'
+description: my cup of tea
+
+markdown: kramdown
+highlighter: rouge
+logo: false
+paginate: 15
+baseurl: /
+domain_name: 'http://yourblog-domain.com'
+google_analytics: 'UA-XXXXXXXX-X'
+gems: [jekyll-paginate]
+
+# Details for the RSS feed generator
+url:            'javabean.ru'
+author:         'Michael Koltsov'
