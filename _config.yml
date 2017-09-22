@@ -14,3 +14,5 @@ gems: [jekyll-paginate]
 # Details for the RSS feed generator
 url:            'javabean.ru'
 author:         'Michael Koltsov'
+
+theme: jekyll-theme-minimal
