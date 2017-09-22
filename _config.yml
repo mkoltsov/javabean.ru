@@ -15,4 +15,4 @@ gems: [jekyll-paginate]
 url:            'javabean.ru'
 author:         'Michael Koltsov'
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-leap-day
