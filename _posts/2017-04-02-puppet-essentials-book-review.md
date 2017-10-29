@@ -14,5 +14,3 @@ categories:
 I will recommend it only if you need to quickly brush up the technical details of Puppet&#8217;s architecture or you need to start using it quickly rather than spending some time on playing with examples its documentation provides
 
 My score: 3/5
-
-<img class="aligncenter size-medium" src="http://www.clipartkid.com/images/281/clipartbest-com-3IENXO-clipart.png" width="3000" height="700" />

@@ -20,5 +20,3 @@ This book has promised to give a broad look on the Python&#8217;s ecosystem, it 
 Good book, but I can&#8217;t recommend it to any professional programmer who&#8217;s used to technical/programming/mathematical books.
 
 Score 3/5
-
-<img class="aligncenter size-medium" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/3_stars.svg/2000px-3_stars.svg.png" width="2000" height="411" />

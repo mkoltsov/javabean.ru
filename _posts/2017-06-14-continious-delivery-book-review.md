@@ -17,5 +17,3 @@ I will recommend it to be read to someone who&#8217;s new in the DevOps communit
 It&#8217;s nice to have all good concepts under one cover, but reading a 400-pages long book that will tell you the history of GIT and SVN is pointless in my opinion. Most of the ideas presented in the book could be wrapped in one long yet succinct blog post.
 
 My score 3/5
-
-<img class="aligncenter size-medium" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/3_stars.svg/2000px-3_stars.svg.png" width="2000" height="411" />

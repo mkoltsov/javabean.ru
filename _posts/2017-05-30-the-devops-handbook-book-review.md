@@ -20,4 +20,3 @@ It has a bunch of great inspiring examples of successes from the companies that 
 
 My score 4/5
 
-<img class="aligncenter size-medium" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/4_stars.svg/1280px-4_stars.svg.png" width="1280" height="263" />

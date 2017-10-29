@@ -14,5 +14,3 @@ categories:
 What I like in this book is how it reminds some of the actual projects I&#8217;ve worked. I&#8217;m not sure whether the final solution that this book presents will be suitable for anyone but still it gives a lot of food for thought how to improve the inner processes and the workflow in any IT organization. If you like &#8220;The Deadline&#8221; by Tom DeMarco you would love this book.
 
 My score is 3/5, simply because I don&#8217;t like novels.
-
-<img class="aligncenter size-medium" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/3_stars.svg/2000px-3_stars.svg.png" width="2000" height="411" />
