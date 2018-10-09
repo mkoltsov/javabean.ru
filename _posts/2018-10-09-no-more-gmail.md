@@ -9,7 +9,7 @@ permalink: /?p=971
 categories:
   - life
 ---
-<img class="alignleft" src="http://www.newlaunches.com/wp-content/uploads/2013/01/gmail-logo1.jpg" width="150" height="224" />
+<img class="alignleft" src="http://www.newlaunches.com/wp-content/uploads/2013/01/gmail-logo1.jpg" />
 
 <p>We had one and off relationships with <a href="https://brave.com/" target="_blank">Brave</a> before, but I couldn't jump off the Google's dreadnought as I had problems with using email with Brave.</p>
 
@@ -19,4 +19,4 @@ categories:
 
 <p>Privacy is Key</p>
 
-<img class="alignleft"src="http://www.newlaunches.com/wp-content/uploads/2013/01/gmail-logo1.jpg"  />
+<img class="alignleft" src="https://i.pinimg.com/736x/81/20/f2/8120f289b51ff78c42f1858e24ad0d7f.jpg"  />
