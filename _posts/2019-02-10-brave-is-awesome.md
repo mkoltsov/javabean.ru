@@ -9,13 +9,13 @@ permalink: /?p=972
 categories:
   - life
 ---
-<img class="alignleft" src="hhttps://images.idgesg.net/images/article/2017/08/brave_browser-100732965-large.jpg" />
+<img class="alignleft" src="https://images.idgesg.net/images/article/2017/08/brave_browser-100732965-large.jpg" width="320" height="240" />
 
 <p>Brave is a great browser. Nice and slick. Fast and secure. The only problem I had with it is its annoying lack of good quality third party extenstions.</p>
 
 <p>Unfortuntely, since this week it's also prohibited to use at my work due to security reasons.</p>
 
-<img class="alignleft" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Yandex.Browser_icon.svg/1200px-Yandex.Browser_icon.svg.png" />
+<img class="alignleft" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Yandex.Browser_icon.svg/1200px-Yandex.Browser_icon.svg.png" width="320" height="240"/>
 
 <p>That's why starting from this week I'll give a try to Yandex browser on the Mac that my employer gives to me. The first impression it made was unexpectedly good, not considering the integrations with Yandex services that you need to switch off almost immediately after the browser launches as they are annoying as hell.</p>
 
