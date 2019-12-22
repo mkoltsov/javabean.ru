@@ -10,7 +10,7 @@ categories:
   - music
 ---
 
-<iframe width="2560" height="1164" src="https://www.youtube.com/embed/3jnX2CYbuks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="600" src="https://www.youtube.com/embed/3jnX2CYbuks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <p>We're almost at the first quarter of the XXI century. Surprisingly, there's nothing more exciting to hear than the acid sounds from the 80's brought to life by Mujuice in 2019.</p>
 
