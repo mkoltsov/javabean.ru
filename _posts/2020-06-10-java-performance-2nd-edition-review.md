@@ -10,6 +10,7 @@ categories:
   - books
 ---
 
+<img class="alignleft" width="360" height="452" src="https://static01.helion.com.pl/global/okladki/326x466/e_1frr.jpg"/>
 
 <p>This was one of the hardest book I've read and bear in mind that I've read the first edition many years ago. It took me a few months to read it cover to cover, mostly because I wanted to play with concepts presented and explained in the book. Sorry for whining, but I really enjoyed the proccess of reading, hence this sacrifice of reading one chapter and even less every week was absolutley worth it.</p>
 
