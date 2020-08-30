@@ -1,6 +1,6 @@
 ---
 id: 969
-title: Ruby on Rails Tutorial: Learn Web Development with Rails book review
+title: Ruby on Rails Tutorial - Learn Web Development with Rails book review
 date: 2018-01-04T22:16:52+00:00
 author: root
 layout: post

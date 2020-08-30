@@ -1,7 +1,7 @@
 ---
 id: 970
-title: The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss, Incredible Sex, and Becoming Superhuman book review
-date: 2018-01-05T22:16:52+00:00
+title: The 4-Hour Body - An Uncommon Guide to Rapid Fat-Loss, Incredible Sex, and Becoming Superhuman book review
+date: 2018-01-05T12:16:52+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=970
