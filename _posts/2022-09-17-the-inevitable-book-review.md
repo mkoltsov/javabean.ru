@@ -1,7 +1,7 @@
 ---
 id: 994
 title: The inevitable book review
-date: 2022-09-17T22:16:52+00:00
+date: 2022-09-16T22:16:52+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=994
