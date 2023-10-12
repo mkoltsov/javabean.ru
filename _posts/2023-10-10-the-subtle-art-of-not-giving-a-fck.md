@@ -16,9 +16,8 @@ categories:
 
 <p>It's very surprising that's not one of Tim Ferriss' books, looks like the author has a background similar to Tim's and was inspired by him as well. However, this book gives answers and most Tim's books left me with more questions than before I started to read them. I wish I read this book in my early 20s, but having learned most of its content the hard way makes me appreciate this book even more as it resonates a lot with my life experience.</p>
 
-<p>If I condense the whole book in a bullet list, that'd be <ol><li>Conduct 1:1s, no matter what</li><li>Embrace the change, it's inevitable</li><li>Trust to delegate or you'd crumble under load</li><li>Find time to innovate</li><li>Be enthusiastic about what you do and either lead or leave</li><li>Be kind to people</li></ol></p>
+<p>If I condense the whole book in a bullet list, that'd be <ol><li>Life is futile, give up trying to be exceptional</li><li>If you need to get the shit done, instead of trying to motivate yourself JFDI!</li><li>Suffering is inevitable, embrace it</li><li>Have realistic goals and values</li><li>You can be wrong, keep questioning yourself</li><li>Embrace rejection: it's OK to say no and receive the same is return</li></ol></p>
 <p>My score is 5/5. </p>
 
 <img class="alignleft" width="360" height="452" src="https://markmanson.net/wp-content/uploads/2015/01/frankly-my-dear.jpg"/>
-
 
