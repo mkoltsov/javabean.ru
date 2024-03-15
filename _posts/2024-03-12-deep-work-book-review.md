@@ -1,7 +1,7 @@
 ---
 id: 1003
-title: Deep Work: Rules for Focused Success in a Distracted World book review
-date: 202In this aspect it reminds me of "Getting Things Done"4-03-12T01:16:52+00:00
+title: Deep Work book review
+date: 2024-03-12T01:16:52+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=1003
