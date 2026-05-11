@@ -49,7 +49,7 @@ post_class: post-template
       </header>
 
       <section class="jb-post-content">
-        {{ content }}
+        {{ content | replace: '<img ', '<img loading="lazy" decoding="async" ' }}
       </section>
 
       {% if page.archive %}

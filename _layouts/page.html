@@ -41,7 +41,7 @@ post_class: post-template page-template
         <h1>{{ page.title }}</h1>
       </header>
       <section class="jb-post-content">
-        {{ content }}
+        {{ content | replace: '<img ', '<img loading="lazy" decoding="async" ' }}
       </section>
     </article>
   </main>
