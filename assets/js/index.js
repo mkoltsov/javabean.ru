@@ -34,13 +34,22 @@
 
     $document.ready(function () {
 
-        var $postContent = $(".post-content");
+        var $postContent = $(".post-content, .jb-post-content");
         $postContent.fitVids();
+
+        $(".jb-post-content img").attr({
+            loading: "lazy",
+            decoding: "async"
+        });
 
         function updateImageWidth() {
             var $this = $(this),
                 contentWidth = $postContent.outerWidth(), // Width of the content
                 imageWidth = this.naturalWidth; // Original image resolution
+
+            if (!contentWidth) {
+                return;
+            }
 
             if (imageWidth >= contentWidth) {
                 $this.addClass('full-img');
