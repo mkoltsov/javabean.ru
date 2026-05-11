@@ -68,6 +68,89 @@
 
         $(".scroll-down").arctic_scroll();
 
+        function setupInfiniteScroll() {
+            var posts = document.querySelector(".jb-posts"),
+                pagination = document.querySelector(".pagination"),
+                status = document.querySelector(".jb-infinite-status"),
+                nextLink = pagination && pagination.querySelector(".older-posts"),
+                loading = false;
+
+            if (!posts || !pagination || !status || !nextLink || !("IntersectionObserver" in window) || !window.fetch || !window.DOMParser) {
+                if (status) {
+                    status.style.display = "none";
+                }
+                return;
+            }
+
+            document.body.classList.add("has-infinite-scroll");
+            status.textContent = "Scroll for older posts";
+
+            function nextUrl() {
+                return nextLink && nextLink.getAttribute("href");
+            }
+
+            function loadNextPage() {
+                var url = nextUrl();
+
+                if (!url || loading) {
+                    return;
+                }
+
+                loading = true;
+                status.classList.add("is-loading");
+                status.textContent = "Loading older posts...";
+
+                fetch(url, { credentials: "same-origin" })
+                    .then(function(response) {
+                        if (!response.ok) {
+                            throw new Error("Unable to load " + url);
+                        }
+                        return response.text();
+                    })
+                    .then(function(html) {
+                        var doc = new DOMParser().parseFromString(html, "text/html"),
+                            newPosts = doc.querySelectorAll(".jb-post-row"),
+                            newNext = doc.querySelector(".older-posts");
+
+                        newPosts.forEach(function(post) {
+                            posts.appendChild(document.importNode(post, true));
+                        });
+
+                        nextLink = newNext;
+
+                        if (!newPosts.length || !nextLink) {
+                            observer.disconnect();
+                            status.textContent = "End of archive";
+                            status.classList.remove("is-loading");
+                            status.classList.add("is-done");
+                            return;
+                        }
+
+                        status.textContent = "Scroll for older posts";
+                        status.classList.remove("is-loading");
+                    })
+                    .catch(function() {
+                        observer.disconnect();
+                        pagination.classList.add("is-visible");
+                        status.textContent = "Could not load more posts";
+                        status.classList.remove("is-loading");
+                    })
+                    .then(function() {
+                        loading = false;
+                    });
+            }
+
+            var observer = new IntersectionObserver(function(entries) {
+                if (entries.some(function(entry) { return entry.isIntersecting; })) {
+                    loadNextPage();
+                }
+            }, { rootMargin: "700px 0px" });
+
+            observer.observe(status);
+        }
+
+        setupInfiniteScroll();
+
     });
 
     // smartresize

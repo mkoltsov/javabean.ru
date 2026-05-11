@@ -1,0 +1,17 @@
+{% assign post_image = "" %}
+{% if include.post.content contains '<img' and include.post.content contains 'src="' %}
+  {% assign post_image = include.post.content | split: 'src="' | last | split: '"' | first %}
+{% endif %}
+<article class="jb-post-row">
+  <p class="jb-meta">{{ include.post.date | date: "%b %-d" }}<br>{{ include.post.date | date: "%Y" }}</p>
+  <div>
+    <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+    <p>{{ include.post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+    <a class="jb-read" href="{{ include.post.url | relative_url }}">Read more</a>
+  </div>
+  {% if post_image %}
+    <a class="jb-thumb" href="{{ include.post.url | relative_url }}">
+      <img src="{{ post_image }}" alt="" loading="lazy" decoding="async">
+    </a>
+  {% endif %}
+</article>

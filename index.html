@@ -59,7 +59,7 @@ title: Home
     </nav>
 
     {% assign featured = paginator.posts | first %}
-    {% if featured %}
+    {% if featured and paginator.page == 1 %}
       {% assign featured_image = "" %}
       {% if featured.content contains '<img' and featured.content contains 'src="' %}
         {% assign featured_image = featured.content | split: 'src="' | last | split: '"' | first %}
@@ -80,27 +80,18 @@ title: Home
     {% endif %}
 
     <section class="jb-posts" aria-label="Latest posts">
-      {% for post in paginator.posts offset:1 %}
-        {% assign post_image = "" %}
-        {% if post.content contains '<img' and post.content contains 'src="' %}
-          {% assign post_image = post.content | split: 'src="' | last | split: '"' | first %}
-        {% endif %}
-        <article class="jb-post-row">
-          <p class="jb-meta">{{ post.date | date: "%b %-d" }}<br>{{ post.date | date: "%Y" }}</p>
-          <div>
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
-            <a class="jb-read" href="{{ post.url | relative_url }}">Read more</a>
-          </div>
-          {% if post_image %}
-            <a class="jb-thumb" href="{{ post.url | relative_url }}">
-              <img src="{{ post_image }}" alt="" loading="lazy" decoding="async">
-            </a>
-          {% endif %}
-        </article>
-      {% endfor %}
+      {% if paginator.page == 1 %}
+        {% for post in paginator.posts offset:1 %}
+          {% include post-row.html post=post %}
+        {% endfor %}
+      {% else %}
+        {% for post in paginator.posts %}
+          {% include post-row.html post=post %}
+        {% endfor %}
+      {% endif %}
     </section>
 
     {% include pagination.html %}
+    <div class="jb-infinite-status" aria-live="polite">Loading older posts...</div>
   </main>
 </div>

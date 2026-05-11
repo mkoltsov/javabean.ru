@@ -445,6 +445,54 @@ a {
   border: 0;
 }
 
+.has-infinite-scroll .pagination {
+  display: none;
+}
+
+.has-infinite-scroll .pagination.is-visible {
+  display: flex;
+}
+
+.jb-infinite-status {
+  display: grid;
+  place-items: center;
+  min-height: 86px;
+  margin: 0 24px 24px;
+  color: var(--jb-muted);
+  background: rgba(15, 23, 36, .82);
+  border: 1px solid var(--jb-line);
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.jb-infinite-status.is-loading:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border: 2px solid rgba(148, 163, 184, .35);
+  border-top-color: var(--jb-blue);
+  border-radius: 50%;
+  animation: jb-spin .8s linear infinite;
+}
+
+.jb-infinite-status.is-loading {
+  grid-auto-flow: column;
+}
+
+.jb-infinite-status.is-done {
+  min-height: 62px;
+}
+
+@keyframes jb-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .pagination a {
   position: static;
   width: auto;
