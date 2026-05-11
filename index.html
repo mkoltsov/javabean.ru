@@ -1,65 +1,106 @@
 ---
 layout: default
 title: Home
-cover: false
-about: 'about.html'
 ---
 
-<header class="main-header{% unless page.cover %} no-cover{% endunless %}"{% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
-    <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ "/" | relative_url }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-        <a class="subscribe-button icon-feed" href="{{ "/feed.xml" | relative_url }}">Subscribe</a>
+<div class="jb-app">
+  <nav class="jb-rail" aria-label="Primary navigation">
+    <a class="jb-logo" href="{{ "/" | relative_url }}">JB</a>
+    <a class="active" href="{{ "/" | relative_url }}">Home</a>
+    <a href="{{ "/about.html" | relative_url }}">About</a>
+    <a href="{{ "/talks.html" | relative_url }}">Talks</a>
+    <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+  </nav>
+
+  <aside class="jb-profile">
+    <a class="jb-avatar" href="{{ "/" | relative_url }}">
+      <img src="{{ "/assets/images/profile.png" | relative_url }}" alt="{{ site.author }}">
+    </a>
+    <h1>{{ site.author }}</h1>
+    <p>Book reviews, engineering notes, systems, conference memories, and travel field reports.</p>
+    <div class="jb-stats">
+      <div><strong>{{ site.posts | size }}</strong><span>posts</span></div>
+      <div><strong>2012</strong><span>since</span></div>
+    </div>
+    <nav class="jb-profile-links" aria-label="Site sections">
+      <a href="{{ "/about.html" | relative_url }}">About</a>
+      <a href="{{ "/places-ive-been-to.html" | relative_url }}">Places</a>
+      <a href="{{ "/talks.html" | relative_url }}">Talks</a>
+      <a href="{{ "/feed.xml" | relative_url }}">Feed</a>
     </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">
-                {% if site.description %} {{ site.description }}. {% endif %}
-                {% if page.about %} <a href='{{ page.about | relative_url }}'> About me </a> {% endif %}
-            </h2>
+  </aside>
+
+  <main class="jb-main">
+    <header class="jb-topbar">
+      <div class="jb-title">
+        <span>{{ site.name }}</span>
+        <small>{{ site.description }}</small>
+      </div>
+      <nav class="jb-nav" aria-label="Top navigation">
+        <a href="{{ "/about.html" | relative_url }}">About</a>
+        <a href="{{ "/talks.html" | relative_url }}">Talks</a>
+        <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+      </nav>
+    </header>
+
+    <section class="jb-intro">
+      <p class="jb-meta">javabean.ru / my cup of tea</p>
+      <h2>Notes on software, systems, books, and places.</h2>
+      <p>A long-running personal archive with recent writing up front and old posts kept easy to scan.</p>
+    </section>
+
+    <nav class="jb-tags" aria-label="Common topics">
+      <span>books</span>
+      <span>data</span>
+      <span>python</span>
+      <span>java</span>
+      <span>travel</span>
+      <span>talks</span>
+    </nav>
+
+    {% assign featured = paginator.posts | first %}
+    {% if featured %}
+      {% assign featured_image = "" %}
+      {% if featured.content contains '<img' and featured.content contains 'src="' %}
+        {% assign featured_image = featured.content | split: 'src="' | last | split: '"' | first %}
+      {% endif %}
+      <article class="jb-featured">
+        <div>
+          <p class="jb-meta">Latest / {{ featured.date | date: "%b %-d, %Y" }}</p>
+          <h3><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h3>
+          <p>{{ featured.excerpt | strip_html | strip_newlines | truncate: 220 }}</p>
+          <a class="jb-read" href="{{ featured.url | relative_url }}">Read latest</a>
         </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
+        {% if featured_image %}
+          <a class="jb-cover" href="{{ featured.url | relative_url }}">
+            <img src="{{ featured_image }}" alt="">
+          </a>
+        {% endif %}
+      </article>
+    {% endif %}
 
-
-<main id="content" class="content" role="main">
-
-
-    <div class="extra-pagination inner">
-        {% include pagination.html %}
-    </div>
-
-    {% for post in paginator.posts %}
-
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        </header>
-        <section class="post-excerpt">
-            {{ post.excerpt }}
-            <p><a class="read-more" href="{{ post.url | relative_url }}">Read more &raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            {% if site.author %}
-                <img class="author-thumb" src="/assets/images/profile.png" alt="Author's profile picture" nopin="nopin" />
-                {{ site.author }}
-            {% endif %}
-            {% if post.categories.size > 0 %} 
-                {{ post.categories | array_to_sentence_string | prepend: 'on ' }} 
-            {% endif %}
-            <time class="post-date" datetime="{{ post.date | date:"%Y-%m-%d" }}">
-                {{ post.date | date_to_string }}
-            </time> 
-        </footer>
-    </article>
-
-    {% endfor %}
+    <section class="jb-posts" aria-label="Latest posts">
+      {% for post in paginator.posts offset:1 %}
+        {% assign post_image = "" %}
+        {% if post.content contains '<img' and post.content contains 'src="' %}
+          {% assign post_image = post.content | split: 'src="' | last | split: '"' | first %}
+        {% endif %}
+        <article class="jb-post-row">
+          <p class="jb-meta">{{ post.date | date: "%b %-d" }}<br>{{ post.date | date: "%Y" }}</p>
+          <div>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+            <a class="jb-read" href="{{ post.url | relative_url }}">Read more</a>
+          </div>
+          {% if post_image %}
+            <a class="jb-thumb" href="{{ post.url | relative_url }}">
+              <img src="{{ post_image }}" alt="">
+            </a>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </section>
 
     {% include pagination.html %}
-
-</main>
+  </main>
+</div>

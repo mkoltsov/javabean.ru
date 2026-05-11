@@ -3,30 +3,46 @@ layout: default
 post_class: post-template page-template
 ---
 
-<nav class="main-nav clearfix">
-    <a class="back-button icon-arrow-left" href="{{ "/" | relative_url }}">Home</a>
-    <a class="subscribe-button icon-feed" href="{{ "/feed.xml" | relative_url }}">Subscribe</a>
-</nav>
+<div class="jb-app jb-app-post">
+  <nav class="jb-rail" aria-label="Primary navigation">
+    <a class="jb-logo" href="{{ "/" | relative_url }}">JB</a>
+    <a href="{{ "/" | relative_url }}">Home</a>
+    <a class="active" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+    <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+  </nav>
 
+  <aside class="jb-profile">
+    <a class="jb-avatar" href="{{ "/" | relative_url }}">
+      <img src="{{ "/assets/images/profile.png" | relative_url }}" alt="{{ site.author }}">
+    </a>
+    <h1>{{ site.author }}</h1>
+    <p>Book reviews, engineering notes, systems, conference memories, and travel field reports.</p>
+    <nav class="jb-profile-links" aria-label="Site sections">
+      <a href="{{ "/" | relative_url }}">Home</a>
+      <a href="{{ "/about.html" | relative_url }}">About</a>
+      <a href="{{ "/talks.html" | relative_url }}">Talks</a>
+    </nav>
+  </aside>
 
-<main class="content" role="main">
-    <article class="post">
-        <!-- <header class="post-header">
-            <a id="blog-logo" href="{{site.baseurl}}">
-                {% if site.logo %}
-                    <img src="{{site.logo}}" alt="{{ site.name }}" />
-                {% else %}
-                    <span class="blog-title">{{ site.name }}</span>
-                {%endif%}
-            </a>
-        </header> -->
+  <main class="jb-main">
+    <header class="jb-topbar">
+      <div class="jb-title">
+        <a href="{{ "/" | relative_url }}">{{ site.name }}</a>
+        <small>{{ site.description }}</small>
+      </div>
+      <nav class="jb-nav" aria-label="Top navigation">
+        <a href="{{ "/" | relative_url }}">Home</a>
+        <a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+      </nav>
+    </header>
 
-        <h1 class="post-title">{{ page.title }}</h1>
-
-        <section class="post-content">
-            {{content}}
-        </section>
-
+    <article class="jb-article">
+      <header class="jb-article-header">
+        <h1>{{ page.title }}</h1>
+      </header>
+      <section class="jb-post-content">
+        {{ content }}
+      </section>
     </article>
-
-</main>
+  </main>
+</div>
