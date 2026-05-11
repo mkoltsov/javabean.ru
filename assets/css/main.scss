@@ -170,6 +170,26 @@ a {
   text-transform: uppercase;
 }
 
+.jb-profile-section {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--jb-line);
+}
+
+.jb-profile-section ul {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+}
+
+.jb-profile-section li {
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
 .jb-profile-links {
   display: grid;
   gap: 9px;
