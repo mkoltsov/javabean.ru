@@ -5,7 +5,6 @@ date: 2015-11-17T22:44:34+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=541
-permalink: /?p=541
 categories:
   - books
   - exams

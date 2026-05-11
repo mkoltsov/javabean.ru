@@ -5,7 +5,6 @@ date: 2014-03-12T13:05:42+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=128
-permalink: /?p=128
 categories:
   - mobile
 tags:

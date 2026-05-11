@@ -5,7 +5,6 @@ date: 2014-09-11T05:57:01+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=297
-permalink: /?p=297
 image: /wp-content/uploads/2014/09/ibmblr-james-murphy.gif
 categories:
   - music

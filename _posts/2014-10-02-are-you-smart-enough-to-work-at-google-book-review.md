@@ -5,7 +5,6 @@ date: 2014-10-02T06:48:42+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=342
-permalink: /?p=342
 categories:
   - books
   - interview

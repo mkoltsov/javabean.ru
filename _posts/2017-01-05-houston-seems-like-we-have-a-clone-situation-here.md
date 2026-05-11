@@ -5,7 +5,6 @@ date: 2017-01-05T06:20:37+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=882
-permalink: /?p=882
 categories:
   - gif
   - life

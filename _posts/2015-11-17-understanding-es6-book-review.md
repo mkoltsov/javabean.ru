@@ -5,7 +5,6 @@ date: 2015-11-17T23:08:55+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=546
-permalink: /?p=546
 categories:
   - books
   - javascript

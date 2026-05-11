@@ -5,7 +5,6 @@ date: 2014-06-10T11:06:20+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=204
-permalink: /?p=204
 categories:
   - life
 ---

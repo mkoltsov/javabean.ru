@@ -5,7 +5,6 @@ date: 2017-05-14T21:22:41+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=937
-permalink: /?p=937
 categories:
   - books
   - DevOps

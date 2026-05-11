@@ -5,7 +5,6 @@ date: 2016-06-02T15:09:31+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=635
-permalink: /?p=635
 categories:
   - books
   - frontend

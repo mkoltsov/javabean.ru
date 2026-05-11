@@ -5,7 +5,6 @@ date: 2020-02-23T22:16:52+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=982
-permalink: /?p=982
 categories:
   - books
 ---

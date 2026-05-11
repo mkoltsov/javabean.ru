@@ -5,7 +5,6 @@ date: 2014-07-10T00:05:15+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=212
-permalink: /?p=212
 categories:
   - frontend
   - java

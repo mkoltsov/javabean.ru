@@ -5,7 +5,6 @@ date: 2014-09-10T05:36:37+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=294
-permalink: /?p=294
 image: /wp-content/uploads/2014/09/web_expert_day_20-09-2014.png
 categories:
   - backend

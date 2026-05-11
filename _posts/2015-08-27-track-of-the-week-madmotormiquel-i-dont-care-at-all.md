@@ -5,7 +5,6 @@ date: 2015-08-27T20:35:19+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=503
-permalink: /?p=503
 categories:
   - stuff
 ---

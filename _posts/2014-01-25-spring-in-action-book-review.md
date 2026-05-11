@@ -5,7 +5,6 @@ date: 2014-01-25T09:10:37+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=121
-permalink: /?p=121
 categories:
   - java
   - scala

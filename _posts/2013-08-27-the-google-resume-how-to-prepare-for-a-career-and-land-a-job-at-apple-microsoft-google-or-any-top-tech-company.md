@@ -5,7 +5,6 @@ date: 2013-08-27T21:22:07+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=80
-permalink: /?p=80
 categories:
   - interview
   - resume

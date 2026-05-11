@@ -5,7 +5,6 @@ date: 2014-11-26T17:42:09+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=381
-permalink: /?p=381
 categories:
   - groovy
 ---

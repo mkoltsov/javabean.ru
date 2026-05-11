@@ -5,7 +5,6 @@ date: 2017-11-12T20:26:40+00:00
 author: root
 layout: post
 guid: 'http://javabean.ru/?p=964'
-permalink: /?p=964
 categories:
   - books
 published: true

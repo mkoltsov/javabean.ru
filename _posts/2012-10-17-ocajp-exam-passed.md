@@ -5,7 +5,6 @@ date: 2012-10-17T15:25:14+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=34
-permalink: /?p=34
 categories:
   - exams
   - java

@@ -5,7 +5,6 @@ date: 2014-09-16T06:28:55+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=308
-permalink: /?p=308
 categories:
   - gif
 ---

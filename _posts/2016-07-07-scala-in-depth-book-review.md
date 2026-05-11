@@ -5,7 +5,6 @@ date: 2016-07-07T18:48:42+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=664
-permalink: /?p=664
 categories:
   - books
   - scala

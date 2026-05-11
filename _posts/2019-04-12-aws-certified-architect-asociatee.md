@@ -5,7 +5,6 @@ date: 2019-04-12T22:16:52+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=975
-permalink: /?p=975
 categories:
   - cloud
   - exam

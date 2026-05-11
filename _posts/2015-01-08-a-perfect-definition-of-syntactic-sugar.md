@@ -5,7 +5,6 @@ date: 2015-01-08T21:12:29+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=395
-permalink: /?p=395
 categories:
   - books
   - groovy

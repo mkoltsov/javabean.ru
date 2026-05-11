@@ -5,7 +5,6 @@ date: 2014-09-19T13:07:42+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=315
-permalink: /?p=315
 geo_latitude:
   - "55.8190445"
 geo_longitude:

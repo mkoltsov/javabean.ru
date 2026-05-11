@@ -5,7 +5,6 @@ date: 2019-12-22T22:16:52+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=979
-permalink: /?p=979
 categories:
   - music
 ---

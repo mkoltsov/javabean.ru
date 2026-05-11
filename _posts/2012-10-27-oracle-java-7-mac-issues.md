@@ -5,7 +5,6 @@ date: 2012-10-27T17:33:46+00:00
 author: root
 layout: post
 guid: http://javabean.ru/?p=45
-permalink: /?p=45
 categories:
   - java
   - oracle
