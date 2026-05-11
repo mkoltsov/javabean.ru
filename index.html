@@ -5,21 +5,21 @@ cover: false
 about: 'about.html'
 ---
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+<header class="main-header{% unless page.cover %} no-cover{% endunless %}"{% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
     <nav class="main-nav overlay clearfix">
             {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
+                <a class="blog-logo" href="{{ "/" | relative_url }}">
                     <img src="{{ page.logo }}" alt="Blog Logo" />
                 </a>
             {% endif %}
-        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}feed.xml">Subscribe</a>
+        <a class="subscribe-button icon-feed" href="{{ "/feed.xml" | relative_url }}">Subscribe</a>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{ site.name }}</h1>
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
+                {% if page.about %} <a href='{{ page.about | relative_url }}'> About me </a> {% endif %}
             </h2>
         </div>
     </div>
@@ -38,10 +38,11 @@ about: 'about.html'
 
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         </header>
-        <section>
-            {{ post.content }}
+        <section class="post-excerpt">
+            {{ post.excerpt }}
+            <p><a class="read-more" href="{{ post.url | relative_url }}">Read more &raquo;</a></p>
         </section>
         <footer class="post-meta">
             {% if site.author %}

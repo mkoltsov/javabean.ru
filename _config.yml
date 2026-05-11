@@ -1,18 +1,16 @@
-url: http://javabean.ru
-name: 'Michael Koltsov&#039;s den'
-description: my cup of tea
+url: "https://javabean.ru"
+title: "Michael Koltsov's den"
+name: "Michael Koltsov's den"
+description: "my cup of tea"
 
 markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: /
-domain_name: 'http://yourblog-domain.com'
+baseurl: ""
 google_analytics: 'UA-XXXXXXXX-X'
-gems: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
 
 # Details for the RSS feed generator
-url:            'javabean.ru'
 author:         'Michael Koltsov'
-
-theme: jekyll-theme-leap-day
